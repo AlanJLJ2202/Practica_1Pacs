@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DD9E687-9A90-455C-B4B4-DAC8AB689480}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PV</RootNamespace>
+    <AssemblyName>PV</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategorias.Designer.cs">
+      <DependentUpon>frmCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMarcas.Designer.cs">
+      <DependentUpon>frmMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMCategoria.Designer.cs">
+      <DependentUpon>frmMCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMMarcas.Designer.cs">
+      <DependentUpon>frmMMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMProducto.Designer.cs">
+      <DependentUpon>frmMProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMUsuario.Designer.cs">
+      <DependentUpon>frmMUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNCategoria.Designer.cs">
+      <DependentUpon>frmNCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNMarca.Designer.cs">
+      <DependentUpon>frmNMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNProducto.Designer.cs">
+      <DependentUpon>frmNProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNUsuario.Designer.cs">
+      <DependentUpon>frmNUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductos.Designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCategorias.resx">
+      <DependentUpon>frmCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarcas.resx">
+      <DependentUpon>frmMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMCategoria.resx">
+      <DependentUpon>frmMCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMMarcas.resx">
+      <DependentUpon>frmMMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMProducto.resx">
+      <DependentUpon>frmMProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMUsuario.resx">
+      <DependentUpon>frmMUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNCategoria.resx">
+      <DependentUpon>frmNCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNMarca.resx">
+      <DependentUpon>frmNMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNProducto.resx">
+      <DependentUpon>frmNProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNUsuario.resx">
+      <DependentUpon>frmNUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{504a4587-ef65-48b6-93d3-e8d422438fd3}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BOL\BOL.csproj">
+      <Project>{3907c7d5-5787-4df3-ae1a-15594e5fade3}</Project>
+      <Name>BOL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
